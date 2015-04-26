@@ -32,3 +32,21 @@ cacheSolve <- function(x, ...) {
   x$setinv(i)
   i
 }
+
+##Test
+##> x = rbind(c(2, 3), c(4, 5))
+##> i = makeCacheMatrix(x)
+##> i$get()
+##[,1] [,2]
+##[1,]    2    3
+##[2,]    4    5
+##> cacheSolve(i)
+##[,1] [,2]
+##[1,] -2.5  1.5
+##[2,]  2.0 -1.0
+##> cacheSolve(i)
+##getting cached data
+##[,1] [,2]
+##[1,] -2.5  1.5
+##[2,]  2.0 -1.0
+
